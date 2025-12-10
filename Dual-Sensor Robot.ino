@@ -10,7 +10,6 @@
 
 NewPing sonar(TRIGGER_PIN, ECHO_PIN, MAX_DISTANCE);
 
-
 AF_DCMotor Motor1(2,MOTOR12_1KHZ);
 AF_DCMotor Motor2(3,MOTOR12_1KHZ);
 AF_DCMotor Motor3(4,MOTOR34_1KHZ);
@@ -42,7 +41,6 @@ pinMode(LEFT, INPUT);
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
 
   delay(50);
  unsigned int distance = sonar.ping_cm();
@@ -115,3 +113,4 @@ if((Right_Value==0) && (distance>=10 && distance<=30)&&(Left_Value==0)){
   Motor4.run(RELEASE);
   }
  }
+
