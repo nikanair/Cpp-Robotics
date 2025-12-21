@@ -14,7 +14,6 @@ void setup() {
 
 
 }
-
 void loop() {
   if ((digitalRead(ir_r)==1) && (digitalRead(ir_c)==1) && (digitalRead(ir_l)==1)){
     M1.setSpeed(200);
@@ -48,3 +47,4 @@ void loop() {
   
   }
 }
+
